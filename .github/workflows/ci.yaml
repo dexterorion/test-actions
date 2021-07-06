@@ -58,7 +58,7 @@ jobs:
     needs: [deploy_dev]
     if: github.ref == 'refs/heads/dev'
     environment:
-    	name: stg
+      name: stg
     steps:
       - name: Download artifact
         uses: actions/setup-go@v2
